@@ -24,7 +24,7 @@ sns.regplot(data = mydf, x = 'Annual_Income_(k$)', y = 'Spending_Score');
 
 sns.boxplot(data = mydf, x = 'Gender', y = 'Annual_Income_(k$)');
 
-#corr = mydf.corr(method = 'pearson')
+corr = mydf.corr(method = 'pearson')
 #corr
 
 import matplotlib.pyplot as plt
