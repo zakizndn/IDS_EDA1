@@ -20,30 +20,6 @@ mydf.describe()
 
 #advert_report.show_notebook()
 
-
-"""
-GROUP 1
-
-Descriptive Question
-- What is the average spending score?
-
-
-Exploratory Question
-- What is the relationship between annual income and spending score?
-
-Inferential
-- Given that male customers has a higher mean annual income than female. Is this true for Europe population?
-
-Predictive
-- Which gender will be having a higher mean spending score in the next year?
-
-Casual Question
-- Will an increase in annual income increase the spending score?
-
-Mechanistic Question
-- How a higher annual income lead to a higher spending score?
-"""
-
 sns.regplot(data = mydf, x = 'Annual_Income_(k$)', y = 'Spending_Score');
 
 sns.boxplot(data = mydf, x = 'Gender', y = 'Annual_Income_(k$)');
@@ -51,9 +27,8 @@ sns.boxplot(data = mydf, x = 'Gender', y = 'Annual_Income_(k$)');
 corr = mydf.corr(method = 'pearson')
 corr
 
-# Commented out IPython magic to ensure Python compatibility.
 import matplotlib.pyplot as plt
-# %matplotlib inline
+%matplotlib inline
 
 plt.figure(figsize=(10,8), dpi =500)
 sns.heatmap(corr,annot=True,fmt=".2f", linewidth=.5)
