@@ -7,25 +7,19 @@ mydf.sample(n = 10)
 
 mydf.describe()
 
-!pip install sweetviz
+#!pip install sweetviz
 
 # Importing sweetviz library
-import sweetviz as sv
+#import sweetviz as sv
 
 # Analyzing the dataset
-advert_report = sv.analyze(mydf)
+#advert_report = sv.analyze(mydf)
 
 # Display the report
-advert_report.show_html('Advertising.html')
+#advert_report.show_html('Advertising.html')
 
-advert_report.show_notebook()
+#advert_report.show_notebook()
 
-# Save the notebook as an image
-image_path = 'Advertising_Report.png'
-advert_report.show_html(image_path)
-
-# Display the image in the notebook
-display(Image(filename=image_path))
 
 """
 GROUP 1
