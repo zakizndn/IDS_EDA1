@@ -28,7 +28,7 @@ corr = mydf.corr(method = 'pearson')
 corr
 
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 plt.figure(figsize=(10,8), dpi =500)
 sns.heatmap(corr,annot=True,fmt=".2f", linewidth=.5)
