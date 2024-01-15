@@ -17,10 +17,12 @@ st.write(mydf.describe())
 
 # Display a scatter plot
 st.write("#### Scatter Plot: Annual Income vs Spending Score")
-scatter_plot = sns.regplot(data=mydf, x='Annual_Income_(k$)', y='Spending_Score')
-st.pyplot()
+fig, ax = plt.subplots()
+sns.regplot(data=mydf, x='Annual_Income_(k$)', y='Spending_Score', ax=ax)
+st.pyplot(fig)
 
 # Display a box plot
 st.write("#### Box Plot: Annual Income by Gender")
-box_plot = sns.boxplot(data=mydf, x='Gender', y='Annual_Income_(k$)')
-st.pyplot()
+fig, ax = plt.subplots()
+sns.boxplot(data=mydf, x='Gender', y='Annual_Income_(k$'), ax=ax)
+st.pyplot(fig)
