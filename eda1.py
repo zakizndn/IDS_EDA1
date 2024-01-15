@@ -24,5 +24,5 @@ st.pyplot(fig)
 # Display a box plot
 st.write("#### Box Plot: Annual Income by Gender")
 fig, ax = plt.subplots()
-sns.boxplot(data=mydf, x='Gender', y='Annual_Income_(k$'), ax=ax)
+sns.boxplot(data=mydf, x='Gender', y='Annual_Income_(k$)', ax=ax)
 st.pyplot(fig)
