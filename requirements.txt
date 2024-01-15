@@ -1,2 +1,8 @@
-pandas 
+streamlit
+altair
+pandas
+streamlit
 seaborn
+matplotlib
+numpy
+scikit-learn==1.1.2
